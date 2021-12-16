@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../../Hooks/Responsive/Responsive";
 import Announcement from "../../Home/Announcement/Announcement";
 import Products from "../../Home/Products/Products";
 import Footer from "../../Shared/Footer/Footer";
@@ -15,17 +16,23 @@ const FilterContainer = styled.div`
 `;
 const Filter = styled.div`
   margin: 20px;
+  ${mobile({ display: "flex", flexDirection: "column" })}
 `;
 const FilterText = styled.span`
   font-size: 20px;
   font-weight: 600;
   margin-right: 20px;
+  ${mobile({ marginRight: "0px" })}
 `;
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
+  font-family: "poppins", sans-serif;
+  ${mobile({ margin: "10px 0" })}
 `;
-const Option = styled.option``;
+const Option = styled.option`
+  font-family: "poppins", sans-serif;
+`;
 
 const ProductList = () => {
   return (

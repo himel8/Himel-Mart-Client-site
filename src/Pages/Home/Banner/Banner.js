@@ -5,6 +5,7 @@ import {
 } from "@material-ui/icons";
 import styled from "styled-components";
 import { sliderItems } from "../../../Data/sliderItems";
+import { mobile } from "../../../Hooks/Responsive/Responsive";
 
 const Container = styled.div`
   width: 100%;
@@ -12,6 +13,8 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  margin-top: 30px;
+  ${mobile({ display: "none" })}
 `;
 const Arrow = styled.div`
   width: 50px;

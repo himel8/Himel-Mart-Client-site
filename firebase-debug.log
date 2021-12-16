@@ -1,0 +1,141 @@
+[debug] [2021-12-15T17:02:43.961Z] ----------------------------------------------------------------------
+[debug] [2021-12-15T17:02:43.964Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HIMEL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-12-15T17:02:43.964Z] CLI Version:   9.23.3
+[debug] [2021-12-15T17:02:43.964Z] Platform:      win32
+[debug] [2021-12-15T17:02:43.964Z] Node Version:  v14.17.4
+[debug] [2021-12-15T17:02:43.965Z] Time:          Wed Dec 15 2021 23:02:43 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-12-15T17:02:43.965Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-15T17:02:44.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-15T17:02:44.028Z] > authorizing via signed-in user (himelkhan290@gmail.com)
+[debug] [2021-12-15T17:02:44.028Z] [iam] checking project himel-mart for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-12-15T17:02:44.031Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/himel-mart:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-12-15T17:02:45.388Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 18 Dec 2021 17:02:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1168","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:45.390Z] > refreshing access token with scopes: []
+[debug] [2021-12-15T17:02:45.390Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-15T17:02:45.604Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 18 Dec 2021 17:02:52 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:45.613Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/himel-mart [none]
+[debug] [2021-12-15T17:02:46.080Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/himel-mart 200
+[debug] [2021-12-15T17:02:46.081Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/himel-mart {"projectId":"himel-mart","projectNumber":"894509680382","displayName":"Himel Mart","name":"projects/himel-mart","resources":{"hostingSite":"himel-mart"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'himel-mart'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-12-15T17:02:46.086Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-15T17:02:46.086Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-15T17:02:46.300Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 18 Dec 2021 17:02:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:46.306Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-12-15T17:02:48.038Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 18 Dec 2021 17:02:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[himel-mart]: beginning deploy... 
+[info] i  hosting[himel-mart]: found 14 files in build 
+[debug] [2021-12-15T17:02:48.205Z] > refreshing access token with scopes: []
+[debug] [2021-12-15T17:02:48.205Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-15T17:02:48.207Z] [hosting] hash cache [YnVpbGQ] stored for 14 files
+[debug] [2021-12-15T17:02:48.207Z] [hosting][hash queue][FINAL] {"max":148,"min":14,"avg":25.5,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":155}
+[debug] [2021-12-15T17:02:48.438Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 18 Dec 2021 17:02:55 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:48.444Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/versions/7bafe7846c2b922c:populateFiles [none]
+[debug] [2021-12-15T17:02:48.445Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/versions/7bafe7846c2b922c:populateFiles {"files":{"/asset-manifest.json":"182a7694826159d14d6bbf09a1572d16bb44c5f22effdc4f5e39a75f1f79306f","/index.html":"0e2b41d501e2f5b09a9586c6773bf4bbffaf63bcbbfeae0d9542ae7b87b23ba5","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/static/css/main.d6b5f71b.css":"3a03bbe08808557c2576ac556c690fa9fbe9f46fd41d0767da7301cfd193cd11","/static/css/main.d6b5f71b.css.map":"dbd8c4c1ce06430a55f9243ef1cbeda9534f4ac5726e09673b5e741b9f018be7","/static/js/787.ed6833ae.chunk.js":"882eb232f05c79421b9e29dddcff66f19601b7fc17fd6eef9751e970d3d17d7c","/static/js/787.ed6833ae.chunk.js.map":"78b10f45d525ccd2c090f0be9f519eb8a41c9107fb0d861ac2eb2b76d932e29c","/static/js/main.c28138d9.js.LICENSE.txt":"b15a15acfd643366904fefddcda88549b9b1c9250ec72c82f1d2bf4a88d68f1f","/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/static/js/main.c28138d9.js":"81babe829f5af84452d1449dcf32ae93706c553f179d772c7d1ffee240748a2a","/static/js/main.c28138d9.js.map":"b0fea0eec9b054466da189bbf432ef08a0cca4b43ae4c637a9ad10a9a19c46bb"}}
+[debug] [2021-12-15T17:02:50.065Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/versions/7bafe7846c2b922c:populateFiles 200
+[debug] [2021-12-15T17:02:50.065Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/versions/7bafe7846c2b922c:populateFiles {"uploadRequiredHashes":["aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","78b10f45d525ccd2c090f0be9f519eb8a41c9107fb0d861ac2eb2b76d932e29c","dbd8c4c1ce06430a55f9243ef1cbeda9534f4ac5726e09673b5e741b9f018be7","b15a15acfd643366904fefddcda88549b9b1c9250ec72c82f1d2bf4a88d68f1f","ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","81babe829f5af84452d1449dcf32ae93706c553f179d772c7d1ffee240748a2a","182a7694826159d14d6bbf09a1572d16bb44c5f22effdc4f5e39a75f1f79306f","3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","0e2b41d501e2f5b09a9586c6773bf4bbffaf63bcbbfeae0d9542ae7b87b23ba5","3a03bbe08808557c2576ac556c690fa9fbe9f46fd41d0767da7301cfd193cd11","eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","b0fea0eec9b054466da189bbf432ef08a0cca4b43ae4c637a9ad10a9a19c46bb","882eb232f05c79421b9e29dddcff66f19601b7fc17fd6eef9751e970d3d17d7c","bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files"}
+[debug] [2021-12-15T17:02:50.068Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [none]
+[debug] [2021-12-15T17:02:50.068Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2021-12-15T17:02:50.069Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/78b10f45d525ccd2c090f0be9f519eb8a41c9107fb0d861ac2eb2b76d932e29c [none]
+[debug] [2021-12-15T17:02:50.070Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/78b10f45d525ccd2c090f0be9f519eb8a41c9107fb0d861ac2eb2b76d932e29c [stream]
+[debug] [2021-12-15T17:02:50.070Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/dbd8c4c1ce06430a55f9243ef1cbeda9534f4ac5726e09673b5e741b9f018be7 [none]
+[debug] [2021-12-15T17:02:50.070Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/dbd8c4c1ce06430a55f9243ef1cbeda9534f4ac5726e09673b5e741b9f018be7 [stream]
+[debug] [2021-12-15T17:02:50.071Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b15a15acfd643366904fefddcda88549b9b1c9250ec72c82f1d2bf4a88d68f1f [none]
+[debug] [2021-12-15T17:02:50.071Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b15a15acfd643366904fefddcda88549b9b1c9250ec72c82f1d2bf4a88d68f1f [stream]
+[debug] [2021-12-15T17:02:50.072Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [none]
+[debug] [2021-12-15T17:02:50.072Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2021-12-15T17:02:50.073Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/81babe829f5af84452d1449dcf32ae93706c553f179d772c7d1ffee240748a2a [none]
+[debug] [2021-12-15T17:02:50.073Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/81babe829f5af84452d1449dcf32ae93706c553f179d772c7d1ffee240748a2a [stream]
+[debug] [2021-12-15T17:02:50.076Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/182a7694826159d14d6bbf09a1572d16bb44c5f22effdc4f5e39a75f1f79306f [none]
+[debug] [2021-12-15T17:02:50.076Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/182a7694826159d14d6bbf09a1572d16bb44c5f22effdc4f5e39a75f1f79306f [stream]
+[debug] [2021-12-15T17:02:50.077Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [none]
+[debug] [2021-12-15T17:02:50.077Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2021-12-15T17:02:50.078Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/0e2b41d501e2f5b09a9586c6773bf4bbffaf63bcbbfeae0d9542ae7b87b23ba5 [none]
+[debug] [2021-12-15T17:02:50.078Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/0e2b41d501e2f5b09a9586c6773bf4bbffaf63bcbbfeae0d9542ae7b87b23ba5 [stream]
+[debug] [2021-12-15T17:02:50.079Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3a03bbe08808557c2576ac556c690fa9fbe9f46fd41d0767da7301cfd193cd11 [none]
+[debug] [2021-12-15T17:02:50.079Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3a03bbe08808557c2576ac556c690fa9fbe9f46fd41d0767da7301cfd193cd11 [stream]
+[debug] [2021-12-15T17:02:50.080Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [none]
+[debug] [2021-12-15T17:02:50.080Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [stream]
+[debug] [2021-12-15T17:02:50.081Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b0fea0eec9b054466da189bbf432ef08a0cca4b43ae4c637a9ad10a9a19c46bb [none]
+[debug] [2021-12-15T17:02:50.081Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b0fea0eec9b054466da189bbf432ef08a0cca4b43ae4c637a9ad10a9a19c46bb [stream]
+[debug] [2021-12-15T17:02:50.081Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/882eb232f05c79421b9e29dddcff66f19601b7fc17fd6eef9751e970d3d17d7c [none]
+[debug] [2021-12-15T17:02:50.081Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/882eb232f05c79421b9e29dddcff66f19601b7fc17fd6eef9751e970d3d17d7c [stream]
+[debug] [2021-12-15T17:02:50.082Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [none]
+[debug] [2021-12-15T17:02:50.082Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2021-12-15T17:02:50.083Z] [hosting][populate queue][FINAL] {"max":1863,"min":1863,"avg":1863,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1878}
+[debug] [2021-12-15T17:02:50.083Z] [hosting] uploads queued: 14
+[debug] [2021-12-15T17:02:51.655Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b 200
+[debug] [2021-12-15T17:02:51.655Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b [stream]
+[debug] [2021-12-15T17:02:51.680Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b15a15acfd643366904fefddcda88549b9b1c9250ec72c82f1d2bf4a88d68f1f 200
+[debug] [2021-12-15T17:02:51.680Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b15a15acfd643366904fefddcda88549b9b1c9250ec72c82f1d2bf4a88d68f1f [stream]
+[debug] [2021-12-15T17:02:51.815Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 200
+[debug] [2021-12-15T17:02:51.815Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49 [stream]
+[debug] [2021-12-15T17:02:51.824Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a 200
+[debug] [2021-12-15T17:02:51.824Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a [stream]
+[debug] [2021-12-15T17:02:51.825Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 200
+[debug] [2021-12-15T17:02:51.825Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331 [stream]
+[debug] [2021-12-15T17:02:51.883Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/78b10f45d525ccd2c090f0be9f519eb8a41c9107fb0d861ac2eb2b76d932e29c 200
+[debug] [2021-12-15T17:02:51.883Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/78b10f45d525ccd2c090f0be9f519eb8a41c9107fb0d861ac2eb2b76d932e29c [stream]
+[debug] [2021-12-15T17:02:52.052Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 200
+[debug] [2021-12-15T17:02:52.052Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9 [stream]
+[debug] [2021-12-15T17:02:52.062Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/882eb232f05c79421b9e29dddcff66f19601b7fc17fd6eef9751e970d3d17d7c 200
+[debug] [2021-12-15T17:02:52.062Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/882eb232f05c79421b9e29dddcff66f19601b7fc17fd6eef9751e970d3d17d7c [stream]
+[debug] [2021-12-15T17:02:52.095Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/dbd8c4c1ce06430a55f9243ef1cbeda9534f4ac5726e09673b5e741b9f018be7 200
+[debug] [2021-12-15T17:02:52.095Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/dbd8c4c1ce06430a55f9243ef1cbeda9534f4ac5726e09673b5e741b9f018be7 [stream]
+[debug] [2021-12-15T17:02:52.150Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/182a7694826159d14d6bbf09a1572d16bb44c5f22effdc4f5e39a75f1f79306f 200
+[debug] [2021-12-15T17:02:52.150Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/182a7694826159d14d6bbf09a1572d16bb44c5f22effdc4f5e39a75f1f79306f [stream]
+[debug] [2021-12-15T17:02:52.189Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3a03bbe08808557c2576ac556c690fa9fbe9f46fd41d0767da7301cfd193cd11 200
+[debug] [2021-12-15T17:02:52.189Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/3a03bbe08808557c2576ac556c690fa9fbe9f46fd41d0767da7301cfd193cd11 [stream]
+[debug] [2021-12-15T17:02:52.438Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/81babe829f5af84452d1449dcf32ae93706c553f179d772c7d1ffee240748a2a 200
+[debug] [2021-12-15T17:02:52.439Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/81babe829f5af84452d1449dcf32ae93706c553f179d772c7d1ffee240748a2a [stream]
+[debug] [2021-12-15T17:02:52.861Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b0fea0eec9b054466da189bbf432ef08a0cca4b43ae4c637a9ad10a9a19c46bb 200
+[debug] [2021-12-15T17:02:52.861Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/b0fea0eec9b054466da189bbf432ef08a0cca4b43ae4c637a9ad10a9a19c46bb [stream]
+[debug] [2021-12-15T17:02:53.684Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/0e2b41d501e2f5b09a9586c6773bf4bbffaf63bcbbfeae0d9542ae7b87b23ba5 200
+[debug] [2021-12-15T17:02:53.685Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/himel-mart/versions/7bafe7846c2b922c/files/0e2b41d501e2f5b09a9586c6773bf4bbffaf63bcbbfeae0d9542ae7b87b23ba5 [stream]
+[debug] [2021-12-15T17:02:53.685Z] [hosting][upload queue][FINAL] {"max":3618,"min":1588,"avg":2091.4285714285716,"active":0,"complete":14,"success":14,"errored":0,"retried":0,"total":14,"elapsed":3620}
+[info] +  hosting[himel-mart]: file upload complete 
+[debug] [2021-12-15T17:02:53.686Z] [hosting] deploy completed after 5647ms
+[debug] [2021-12-15T17:02:53.689Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "himel-mart"
+    },
+    "site": "himel-mart",
+    "version": "sites/himel-mart/versions/7bafe7846c2b922c"
+  }
+]
+[info] i  hosting[himel-mart]: finalizing version... 
+[debug] [2021-12-15T17:02:53.690Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-12-15T17:02:53.691Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-12-15T17:02:54.204Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 18 Dec 2021 17:03:01 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:54.211Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/versions/7bafe7846c2b922c?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-12-15T17:02:55.826Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 18 Dec 2021 17:03:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:55.826Z] [hosting] finalized version for himel-mart: {"name":"sites/himel-mart/versions/7bafe7846c2b922c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-12-18T17:02:54.681454Z","createUser":{"email":"himelkhan290@gmail.com"},"finalizeTime":"2021-12-18T17:03:02.622717Z","finalizeUser":{"email":"himelkhan290@gmail.com"}}
+[info] +  hosting[himel-mart]: version finalized 
+[info] i  hosting[himel-mart]: releasing new version... 
+[debug] [2021-12-15T17:02:55.827Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/himel-mart/releases?version_name=sites/himel-mart/versions/7bafe7846c2b922c  
+ {"message":null}
+[debug] [2021-12-15T17:02:57.379Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 18 Dec 2021 17:03:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-12-15T17:02:57.379Z] [hosting] release: {"name":"sites/himel-mart/releases/1639846983656303","version":{"name":"sites/himel-mart/versions/7bafe7846c2b922c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-12-18T17:02:54.681454Z","createUser":{"email":"himelkhan290@gmail.com"},"finalizeTime":"2021-12-18T17:03:02.622717Z","finalizeUser":{"email":"himelkhan290@gmail.com"}},"type":"DEPLOY","releaseTime":"2021-12-18T17:03:03.656303660Z","releaseUser":{"email":"himelkhan290@gmail.com"}}
+[info] +  hosting[himel-mart]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/himel-mart/overview
+[info] Hosting URL: https://himel-mart.web.app

@@ -5,6 +5,7 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../../Hooks/Responsive/Responsive";
 
 const Info = styled.div`
   opacity: 0;
@@ -31,7 +32,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-
+  ${mobile({ height: "100%", width: "100%" })}
   &:hover ${Info} {
     opacity: 1;
   }
@@ -46,6 +47,8 @@ const Circle = styled.div`
 const Image = styled.img`
   height: 80%;
   z-index: 2;
+
+  ${mobile({ width: "100%", height: "100%" })}
 `;
 
 const Icon = styled.div`
